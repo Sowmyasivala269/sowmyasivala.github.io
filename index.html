@@ -3,103 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sowmya Sivala | Data Analyst Portfolio</title>
+  <title>Sowmya Sivala | Data Analyst</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-    h1, h2 {
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+    .typewriter {
+      font-size: 1.2em;
+      font-weight: 400;
+      border-right: 3px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
       color: #2c3e50;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
     }
     a {
       color: #3498db;
       text-decoration: none;
     }
-    .section {
-      margin-top: 40px;
+    nav {
+      background: #eee;
+      text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <h1>Sowmya Sivala</h1>
-  <p>
-    📍 United States | 
-    📧 <a href="mailto:sowmya.sivala@gmail.com">sowmya.sivala@gmail.com</a> | 
-    🔗 <a href="https://www.linkedin.com/in/sowmyasivala2609" target="_blank">LinkedIn</a>
-  </p>
+  <header>
+    <h1>Sowmya Sivala</h1>
+    <div class="typewriter">Data Analyst | Python | SQL | Power BI | Storytelling with Data</div>
+  </header>
 
-  <div class="section">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      I’m a data storyteller who turns complex data into clear stories and smarter strategies.
-      Skilled in Python, SQL, and Power BI with hands-on experience in building dashboards and predictive models. 
-      Obsessed with uncovering trends, solving problems, and making data make sense.
+      I’m a data analyst who transforms complex data into compelling stories. With experience in Python, SQL, Power BI, and machine learning, I build dashboards and predictive models that drive real-world impact. I thrive on discovering insights and turning them into actionable decisions.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p>
-      <strong>Saint Louis University</strong> – MS in Applied Analytics (2023–2025) | GPA: 3.76<br/>
-      <strong>Sri Sathya Sai Institute of Higher Learning</strong> – BS in Mathematics & Statistics (2019–2022) | GPA: 6.7/10
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-    <p>
-      <strong>Lead Intern, Supply Chain & Inventory – Hobel Bellows Co</strong> (May 2022 – July 2022)<br/>
-      • Built Power BI dashboards tracking inventory across 10+ categories, reducing manual reporting time by 40%.<br/>
-      • Identified 2.8-unit overstock deviation using historical trends and improved forecasting accuracy.<br/>
-      • Conducted root cause analysis with ERP and Excel data, driving better procurement planning.<br/>
-    </p>
-    <p>
-      <strong>Mathematics Instructor (Data-Focused) – Kumon Learning Center</strong> (Aug 2022 – Jul 2023)<br/>
-      • Built Excel dashboards to analyze learning data for 30+ students, reducing error rates by 20%.<br/>
-      • Recommended curriculum interventions based on performance insights.
-    </p>
-  </div>
-
-  <div class="section">
+  <section id="projects">
     <h2>Projects</h2>
-    <p>
-      <strong>Patient Health Risk Prediction Dashboard</strong><br/>
-      Built a Streamlit app using EHR data, XGBoost, and SHAP (ROC-AUC > 0.98). Visualized individual patient risk contributors and added booking integration.
-    </p>
-    <p>
-      <strong>Social Media Engagement Analysis</strong><br/>
-      Cleaned and visualized 500+ posts using Pandas and Seaborn. Discovered top-performing content categories (travel, culture).
-    </p>
-    <p>
-      <strong>E-Commerce Client Data Analysis</strong><br/>
-      Analyzed 5,000+ records for customer behavior using SQL and Python. Created visual dashboards to inform strategy and marketing performance.
-    </p>
-  </div>
+    <ul>
+      <li><strong>🩺 Health Risk Prediction Dashboard:</strong> Built in Streamlit using XGBoost & SHAP. ROC-AUC > 0.98.</li>
+      <li><strong>📊 Social Media Engagement Analysis:</strong> Used Pandas & Seaborn to uncover engagement trends.</li>
+      <li><strong>🛒 E-commerce Data Insights:</strong> Explored 5K+ records with SQL & visualized behavior in Power BI.</li>
+    </ul>
+  </section>
 
-  <div class="section">
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li><strong>Languages & Tools:</strong> Excel, Python, R, SQL</li>
-      <li><strong>Visualization:</strong> Power BI, Tableau, Seaborn, Pandas</li>
-      <li><strong>Machine Learning:</strong> XGBoost, SHAP, SMOTENC</li>
-      <li><strong>Platforms:</strong> Google Colab, Jupyter Notebook, SPSS</li>
-      <li><strong>Soft Skills:</strong> Communication, Problem-Solving, Collaboration</li>
+      <li><strong>Languages:</strong> Python, R, SQL</li>
+      <li><strong>Tools:</strong> Power BI, Tableau, Streamlit</li>
+      <li><strong>ML:</strong> XGBoost, SHAP, SMOTENC</li>
+      <li><strong>Soft Skills:</strong> Communication, Collaboration, Storytelling</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Databases and SQL for Data Science – IBM/Coursera</li>
-      <li>Creating Interactive Tableau Dashboards – LinkedIn Learning</li>
-      <li>Power BI for Data Analysts – LinkedIn Learning, Microsoft Press</li>
-    </ul>
-  </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:sowmya.sivala@gmail.com">sowmya.sivala@gmail.com</a><br>
+      🔗 <a href="https://www.linkedin.com/in/sowmyasivala2609" target="_blank">LinkedIn Profile</a>
+    </p>
+  </section>
+
+  <script>
+    // Scroll reveal animation
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 300;
+        const height = sec.offsetHeight;
+        if (top > offset && top < offset + height) {
+          sec.classList.add("visible");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
+
